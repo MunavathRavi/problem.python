@@ -1,0 +1,109 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPtAQm7L6vTgmZSPbtHzLzk",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/MunavathRavi/otp_arryas/blob/main/python%20sum\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "d9qryXO2Vspc"
+      },
+      "outputs": [],
+      "source": [
+        "def add(n):\n",
+        "  sum=0\n",
+        "  for i in range(1,n+1):\n",
+        "    sum+=i\n",
+        "  return sum\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "add(10)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Xdn57nQ7WBX4",
+        "outputId": "e4ea91f9-b5a3-47db-ff4f-c01af492c1fc"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "55"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 3
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "row1=[\"😆\",\"😆\",\"😆\",\"😆\"]\n",
+        "row2=[\"😆\",\"😆\",\"😆\",\"😆\"]\n",
+        "row3=[\"😆\",\"😆\",\"😆\",\"😆\"]\n",
+        "matx = [row1,row2,row3]\n",
+        "print(f\"{row1}\\n{row2}\\n{row3}\")\n",
+        "postions = input(\"enter u want postins in matx\")\n",
+        "row_number= int(postions[0])\n",
+        "col_number= int(postions[1])\n",
+        "matx[row_number-1][col_number-1]=\"i love you\"\n",
+        "print(f\"{row1}\\n{row2}\\n{row3}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uu6QpYxzWGrk",
+        "outputId": "d291003b-a1b6-4fe0-b540-ed88d6613c0c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['😆', '😆', '😆', '😆']\n",
+            "['😆', '😆', '😆', '😆']\n",
+            "['😆', '😆', '😆', '😆']\n",
+            "enter u want postins in matx23\n",
+            "['😆', '😆', '😆', '😆']\n",
+            "['😆', '😆', 'i love you', '😆']\n",
+            "['😆', '😆', '😆', '😆']\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
