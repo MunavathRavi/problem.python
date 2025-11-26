@@ -1,1 +1,52 @@
-# otp_arryas
+class ATM:
+  x = 1234
+  n = int(input("enter the number"))
+  if x==n:
+    print("WELLCOME TO ATM MECHINE")
+
+
+    def __init__(self,balanec,deposit,withdarwal,exit):
+       self.balanec = balanec
+       self.deposit = deposit
+       self.withdarwal = withdarwal
+       self.exit = exit
+    deposit = input("yes" and "no")
+    if deposit == "yes":
+        print("you can deposit now")
+    elif deposit == "no":
+        print("you can\'t deposit")
+    deposit = int(input("enter the amount"))
+    print("deposit is susscessfull")
+    balanec = balanec+deposit
+    print("your current balanec is",balanec)
+    withdarwal = int(input(1,2))
+    if withdarwal == 1:
+        print("you can withdarwal now")
+    elif withdarwal == 2:
+        print("you can\'t withdarwal")
+    else:
+        print("INVALIED NUMBER ")
+    withdarwal = int(input("enter the amount"))
+    if withdarwal <= balanec:
+      balanec = balanec-withdarwal
+      print("you\'s withdarwal is susscfull")
+      print("remaing balanec",balanec)
+    else:
+      print("insufficient balanec")
+    exit = "thank you"
+    print(exit)
+  else:
+    print("INVALIED NUMBER ")
+  print("THANK YOU FOR CHOUSEING HDFC BANK")
+  s2 = ATM(balanec,deposit,withdarwal)
+  print(s2.withs)
+  print(s2.depo())
+  print(s2.deposit)
+  print(s2.withdarwal)
+  print(s2.balanec)
+  print(s2.exit)
+
+
+
+
+
