@@ -1,0 +1,331 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPE1jrzGzf8VNGr9RJ/ywvS",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/MunavathRavi/otp_arryas/blob/main/python%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "02KuJrG9efUt",
+        "outputId": "8118d0d7-2b18-4344-da37-8bd9e64122af"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "ravi\n"
+          ]
+        }
+      ],
+      "source": [
+        "class std:\n",
+        "   name = \"ravi\"\n",
+        "obj=std()\n",
+        "print(obj.name)\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from typing_extensions import Self\n",
+        "class std:\n",
+        "  def __init__(self,name,age):\n",
+        "    self.name=name\n",
+        "    self.age=age\n",
+        "    print(\"this is constructor\")\n",
+        "  def fun (self):\n",
+        "    print(\"well to man\")\n",
+        "obj1=std(\"ravi\",12)\n",
+        "print(obj1.name)\n",
+        "print(obj1.age)\n",
+        "print(obj1.fun())\n",
+        "obj2=std(\"munavath\",30)\n",
+        "print(obj2.age)\n",
+        "print(obj2.name)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HyONm0i7hT5Z",
+        "outputId": "050f58f2-f893-4bda-c318-e3591c0a9aa6"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "this is constructor\n",
+            "ravi\n",
+            "12\n",
+            "well to man\n",
+            "None\n",
+            "this is constructor\n",
+            "30\n",
+            "munavath\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class brand:\n",
+        "  def __init__(self,brand,model):\n",
+        "    self.brand=brand\n",
+        "    self.model=model\n",
+        "\n",
+        "s1=brand(\"samsung\",\"s23\")\n",
+        "print(s1.brand)\n",
+        "print(s1.model)\n",
+        "s2=brand(\"iphone\",\"14\")\n",
+        "print(s2.brand)\n",
+        "print(s2.model)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nd2aolJbsr3u",
+        "outputId": "7243dbac-b06b-4c71-9f2d-37194d9b0f10"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "samsung\n",
+            "s23\n",
+            "iphone\n",
+            "14\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Book:\n",
+        "  def ___init__(self,tittle,author):\n",
+        "    self.tittle=tittle\n",
+        "    self.author=author\n",
+        "s3=Book(\"python\",\"ravi\")\n",
+        "print(s3.tittle)\n",
+        "print(s3.author)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 211
+        },
+        "id": "5F7hKREfuYLO",
+        "outputId": "17454fc6-12fd-462b-9810-6b886139603e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "TypeError",
+          "evalue": "Book() takes no arguments",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipython-input-1807862654.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      3\u001b[0m     \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mtittle\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mtittle\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      4\u001b[0m     \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mauthor\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mauthor\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 5\u001b[0;31m \u001b[0ms3\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mBook\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"python\"\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\"ravi\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      6\u001b[0m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0ms3\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mtittle\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      7\u001b[0m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0ms3\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mauthor\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mTypeError\u001b[0m: Book() takes no arguments"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Books:\n",
+        "  def __init__(self,tittle,author):\n",
+        "    self.tittle=tittle\n",
+        "    self.author=author\n",
+        "  def fum_book(self):\n",
+        "    print(\"book name:\",self.tittle)\n",
+        "    print(\"author:\",self.author)\n",
+        "s1=Books(\"python\",\"ravi\")\n",
+        "s1.fum_book()\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qslSk70pxh3f",
+        "outputId": "7d9db4b6-291c-4c4f-ecb2-951a77a25f30"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "book name: python\n",
+            "author: ravi\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class emply:\n",
+        "  def __init__(self,name,sal):\n",
+        "    self.name=name\n",
+        "    self.sal=sal\n",
+        "  def fun_emp(Self):\n",
+        "    print(\"update sal ravi \")\n",
+        "s3=emply(\"ravi\",20000)\n",
+        "print(s3.name)\n",
+        "print(s3.sal)\n",
+        "print(s3.fun.emp())\n",
+        "print(s3.fun.emp())\n",
+        "s3.sal=40000\n",
+        "print(\"after the sal:\",s3.sal)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 245
+        },
+        "id": "PPTEtr7ox0JG",
+        "outputId": "c03215ea-1fdb-49ac-9bed-743b5ed13c7f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "ravi\n",
+            "20000\n"
+          ]
+        },
+        {
+          "output_type": "error",
+          "ename": "AttributeError",
+          "evalue": "'emply' object has no attribute 'fun'",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mAttributeError\u001b[0m                            Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipython-input-2486087669.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      8\u001b[0m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0ms3\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mname\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      9\u001b[0m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0ms3\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0msal\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 10\u001b[0;31m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0ms3\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mfun\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0memp\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     11\u001b[0m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0ms3\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mfun\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0memp\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     12\u001b[0m \u001b[0ms3\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0msal\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m40000\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mAttributeError\u001b[0m: 'emply' object has no attribute 'fun'"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class laptop:\n",
+        "  def __init__(self,barnd,ram,price):\n",
+        "    self.brand=brand\n",
+        "    self.ram=ram\n",
+        "    self.price=price\n",
+        "brand= input(\"enter the brand\")\n",
+        "ram= int(input(\"enter the ram\"))\n",
+        "price= int(input(\"enter the price\"))\n",
+        "s4=laptop(brand,ram,price)\n",
+        "print(s4.brand)\n",
+        "print(s4.ram)\n",
+        "print(s4.price)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ei9PCANP1Eqz",
+        "outputId": "8561b0e6-bcc2-4f16-85af-566c214a7761"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter the brandSUMSUNG\n",
+            "enter the ram560\n",
+            "enter the price450000\n",
+            "SUMSUNG\n",
+            "560\n",
+            "450000\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class rect:\n",
+        "  def __init__(self,lenght,width):\n",
+        "    self.lenght=lenght\n",
+        "    self.width=width\n",
+        "\n",
+        "s6=rect(12,10)\n",
+        "print(s6.lenght*s6.width)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lr_3olfb3f0Y",
+        "outputId": "a1cdbdee-9c90-4609-d89c-742430d51006"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "120\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class"
+      ],
+      "metadata": {
+        "id": "KPHB2aHi6IaE"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
