@@ -1,0 +1,223 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNeUkF/npua6gxsc9Y071NC",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/MunavathRavi/problem.python/blob/main/problem%20Solving\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1eyzgdRtfMjV",
+        "outputId": "ba540570-7319-4581-ee1d-5a1f500f2437"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1, 2, 3]\n"
+          ]
+        }
+      ],
+      "source": [
+        "from os import remove\n",
+        "head = [1,1,2,3,3]\n",
+        "a = []\n",
+        "for i in head:\n",
+        "  if i not in a:\n",
+        "\n",
+        "    a.append(i)\n",
+        "print(a)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nums = [2,37,4,6,3,]\n",
+        "# nums.sort()\n",
+        "# print(max(nums))\n",
+        "h   = 0\n",
+        "s_h  = 0\n",
+        "for i in nums:\n",
+        "  s_h = h\n",
+        "  if i > h:\n",
+        "    h = i\n",
+        "  if i < s_h and i > h:\n",
+        "    s_h = i\n",
+        "    heapq.heappush\n",
+        "print(s_h)\n",
+        "print(h)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HOhdRwI_r5sh",
+        "outputId": "e1b49c8e-5344-4874-c4d5-5e92e45bff45"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "37\n",
+            "6\n",
+            "37\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import heapq\n",
+        "nums = [3,2,1,6,5,4] ,k == 4\n",
+        "heap = []\n",
+        "for i in nums:\n",
+        "  heapq.heappush(heap,nums):\n",
+        "  if len(head) > :\n",
+        "    heapq.heappop(heap)\n",
+        "print(heap)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 108
+        },
+        "id": "GfDa8zAuweYG",
+        "outputId": "4c74c4d1-9367-4746-b865-ca00d053ae56"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "invalid syntax (ipython-input-3765211143.py, line 5)",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"/tmp/ipython-input-3765211143.py\"\u001b[0;36m, line \u001b[0;32m5\u001b[0m\n\u001b[0;31m    heapq.heappush(heap,nums):\u001b[0m\n\u001b[0m                             ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nums = [3,2,3,3,5,7]\n",
+        "count  = 0\n",
+        "can = None\n",
+        "for i in nums:\n",
+        "  if count == 0 :\n",
+        "    can = nums\n",
+        "  if nums == can:\n",
+        "    count = count +1\n",
+        "  else :\n",
+        "    count = count -1\n",
+        "print(count)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MUa9Du0Vx1A6",
+        "outputId": "7d7cf248-8ef5-4cf9-e9a9-ed20c546ec10"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "6\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "matr = [[2,3,5],[5,6,7],[7,5,4]]\n",
+        "a = []\n",
+        "for i in matr:\n",
+        "  for j in i:\n",
+        "   a.append(j)\n",
+        "print(a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "e8NoFWrs1xyP",
+        "outputId": "ef462aed-6fb8-4aa7-f701-87132a311fc5"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[2, 3, 5, 5, 6, 7, 7, 5, 4]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n = \"ravi\"\n",
+        "m = \"ravi\"\n",
+        "for i in range(len(n)):\n",
+        "  if n[i] == m[i]:\n",
+        "      print(True)\n",
+        "  else:\n",
+        "      print(False)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rFBTXO-G3oyZ",
+        "outputId": "e7c51cd6-4459-4645-ea22-b4d297c56cf5"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n",
+            "True\n",
+            "True\n",
+            "True\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
